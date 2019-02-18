@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog List</title>
+    <link rel='stylesheet' href='/stylesheets/style.csss' />
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blogList">List Blogs</a></li>
+      <li><a href="/blogAdd">Add Blogs</a></li>
+    </ul>
+    <h1>Blog List</h1>
+    <p>This page is still in developement</p>
+  </body>
+</html>
