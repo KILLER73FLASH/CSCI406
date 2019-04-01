@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='../stylesheets/style.css'/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/list">List Blogs</a></li>
+      <li><a href="/add">Add Blogs</a></li>
+    </ul>
+
+    <form method="post" action="/edit/<%= blogs._id%>">
+      <br>Blog Title:<br>
+      <input class="blogTitle" id="blogTitle" name="blogTitle" value="<%= blogs.blogTitle%>" ><br>
+      Blog Text:<br>
+      <textarea class="blogText" id="blogText" name="blogText" row="25" cols="30"><%= blogs.blogText%></textarea><br>
+      <input type="submit" value="Save Blog">
+    </form>
+
+  </body>
+
+</html>

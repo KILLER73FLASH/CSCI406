@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/list">List Blogs</a></li>
+      <li><a href="/add">Add Blogs</a></li>
+    </ul>
+    <h1>Blog List</h1>
+    <% for(var i=0; i < blogs.length; i++) {%>
+
+       <div class="blogBox">
+
+	  <div class="blogHeader"><%= blogs[i].blogTitle%></div>
+
+	   <div class="blogBody">
+
+	     <p class="blogText"><%= blogs[i].blogText%></p>
+
+		 </div>
+
+	    <div class="blogFooter">
+
+	         <a href="/edit">
+
+		        <i class="glyphicon glyphicon-pencil"></i>
+
+			   </a>
+
+		    <a href="/remove">
+
+		           <i class="glyphicon glyphicon-trash"></i>
+
+			      </a>
+
+		     </div>
+
+       </div>
+
+       <p></p>
+
+    <%}%>
+    
+  </body>
+</html>

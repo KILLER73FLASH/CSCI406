@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Add</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blogList">List Blogs</a></li>
+      <li><a href="/blogAdd">Add Blogs</a></li>
+    </ul>
+    <h1>Blog Add</h1>
+    <form method="post" action="/add">
+      Blog Title:<br>
+      <input class="blogTitle" name="blogTitle"><br>
+      Blog Text:<br>
+      <textarea class="blogText" name="blogText" row="15" cols="30"></textarea><br>
+      <input type="submit" value="Add Blog">
+    </form>  
+  </body>
+</html>

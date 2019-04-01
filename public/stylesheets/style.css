@@ -26,3 +26,54 @@ li a {
     text-align: center;
     padding: 14px  16px;
     text-decoration: none;
+
+div.blogBox {
+    outline-style: solid;
+    outline-color: black;
+    outline-width: thin;
+    height: 200px;
+    width: 40%;
+}
+
+div.blogHeader{
+    background-color:gainsboro;
+    outline-color:silver;
+    outline-width:thin;
+    outline-style:solid;
+    width:100%;
+    height:20%;
+}
+
+div.blogBody{
+    height:60%;
+    background-color:white;
+    width:100%;
+}
+
+div.blogFooter{
+    outline-style:solid;
+    outline-width:thin;
+    outline-color:silver;
+    height:20%;
+    width:100%;
+    background-color:gainsboro;
+}
+
+p.blogText{
+    font-size:large;
+    font-weight:bold;
+    position:relative;
+    left:10px;
+}
+
+i.glyphicon-pencil{
+    display:inline;
+    left:82%;
+    top:30%;
+}
+
+i.glyphicon-trash{
+    display:inline;
+    left:85%;
+    top:30%;
+}
