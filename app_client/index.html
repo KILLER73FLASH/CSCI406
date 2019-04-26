@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html ng-app="blogApp" lang="en-US">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-ui-router.min.js"></script>
+<script src="bloggerApp.js"></script>
+<script src="/nav/navigation.js"></script>
+<link rel='stylesheet' href='stylesheets/style.css'/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!-- Navigation -->  
+<body ng-controller="homeController">
+
+  <div ng-controller="NavigationController">
+    <navigation></navigation>  
+  </div>
+  
+<!--Home Page-->
+<script type="text/ng-template" id="home.html">
+  <h1>{{vm.homeHeader}}</h1>
+  <p>{{vm.homeText}}</p>
+</script>
+
+<!--List Page--> 
+<script type="text/ng-template" id="list.html">
+  <h1>{{vm.listHeader}}</h1>
+  <p></p>
+  <div ng-repeat="blogs in vm.blog">
+    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{blogs.blogTitle}}</h5>
+    <p class="card-text">{{blogs.blogText}}</p>
+    <h6 class="card-text" style="font-size:x-small">Published by {{blogs.userName}}</h6>
+    <a ng-show="vm.isLoggedIn() && vm.isAuthor(blogs)" href="#/remove/{{blogs._id}}" class="btn btn-primary">Delete</a>
+    <a ng-show="vm.isLoggedIn() && vm.isAuthor(blogs)" href="#/edit/{{blogs._id}}" class="btn btn-primary">Edit</a>
+  </div>
+</div>
+</div>
+</script>
+
+<!--Add Page-->
+<script type="text/ng-template" id="add.html">
+  <p></p>
+  <div class="card border-primary" style="width: 50%">
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="addController" style="padding: 20px">
+      <div class="form-group">
+        <input class="form-control" id="blogTitle" name="blogTitle">
+        <textarea class="form-control" id="blogText" name="blogText" rows="3"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add Blog">
+    </form>
+  </div>
+</script>
+
+<!-- Edit Page -->
+<script type="text/ng-template" id="edit.html">
+  <p></p>
+  <div class="card border-primary" style="width: 50%">  
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="editController" style="padding: 20px">
+      <div class="form-group">
+        <input class="form-control" id="blogTitle" name="blogTitle" value="{{vm.blog.blogTitle}}">
+        <textarea class="form-control" id="blogText" name="blogText" rows="3">{{vm.blog.blogText}}</textarea>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Save Blog">
+    </form> 
+  </div>
+</script>
+
+<!-- Remove Page -->
+<script type="text/ng-template" id="remove.html">
+  <p></p>
+  <div class="card text-black bg-light mb-3" style="width: 18rem">
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="removeController" style="padding: 20px">
+      <div class="card-body">
+        <h5 class="card-title">{{vm.blog.blogTitle}}</h5>
+        <p class="card-text">{{vm.blog.blogText}}</p>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Delete Blog">
+    </form>
+  </div>
+</script>
+
+
+
+<!-- Register Page -->
+<script type="text/ng-template" id="register.html">
+ <div class="container">
+  <page-header content="vm.pageHeader"></page-header>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <p class="lead">Already a member? Please <a href="/#login?page={{ vm.returnPage }}">log in</a> instead.</p>
+      <form ng-submit="vm.onSubmit()" ng-controller="RegisterController">
+        <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" ng-model="vm.credentials.name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="vm.credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" ng-model="vm.credentials.password">
+        </div>
+        <button type="submit" class="btn btn-default">Register!</button>
+      </form>
+    </div>
+  </div>
+ </div>
+</script>
+
+<!-- Login Page -->
+<script type="text/ng-template" id="login.html">
+  <div class="container">
+    <page-header content="vm.pageHeader"></page-header>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-8">
+	<p class="lead">Not a member? Please <a href="/#register?page={{ vm.returnPage }}">register</a> first.</p>
+	<form ng-submit="vm.onSubmit()" ng-controller="LoginController">
+          <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="vm.credentials.email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" ng-model="vm.credentials.password">
+          </div>
+          <button type="submit" class="btn btn-default">Sign in!</button>
+	  </form>
+      </div>
+    </div>
+  </div>
+</script>
+  <div ng-view></div
+</body>
+</html>

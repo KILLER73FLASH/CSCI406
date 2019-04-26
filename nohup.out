@@ -16809,3 +16809,1625 @@ Mongoose connected to mongodb://localhost/myapp
 [0mGET /TP/public/index.php [33m404 [0m1.139 ms - 1418[0m
 [0mGET / [32m200 [0m1.399 ms - 415[0m
 [0mGET / [32m200 [0m1.047 ms - 415[0m
+(node:3042) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+[0mGET / [36m304 [0m5.245 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.762 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.295 ms - -[0m
+[0mGET / [36m304 [0m0.790 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.606 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.361 ms - -[0m
+[0mGET / [36m304 [0m0.285 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.317 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.838 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch test' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [36m304 [0m20.764 ms - -[0m
+[0mGET / [32m200 [0m2.548 ms - 3410[0m
+[0mGET / [32m200 [0m0.612 ms - 3410[0m
+[0mGET / [32m200 [0m0.833 ms - 3410[0m
+[0mGET / [32m200 [0m0.945 ms - 3410[0m
+[0mGET / [32m200 [0m0.413 ms - 3410[0m
+[0mGET / [32m200 [0m0.449 ms - 3410[0m
+[0mGET /favicon.ico [33m404 [0m10.455 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET / [32m200 [0m0.693 ms - 3410[0m
+[0mGET /bloggerApp.js [32m200 [0m0.554 ms - 3274[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.997 ms - 1150[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch test' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [32m200 [0m3.040 ms - 279[0m
+Finding blog { blogid: '5c746e97271c198640bdbecd' }
+{ _id: 5c746e97271c198640bdbecd,
+  blogTitle: 'Favorite Game',
+  blogText: 'Overwatch test' }
+[0mGET /api/blog/5c746e97271c198640bdbecd [32m200 [0m5.268 ms - 90[0m
+Finding blog { blogid: '5c746e97271c198640bdbecd' }
+{ _id: 5c746e97271c198640bdbecd,
+  blogTitle: 'Favorite Game',
+  blogText: 'Overwatch test' }
+[0mGET /api/blog/5c746e97271c198640bdbecd [36m304 [0m1.770 ms - -[0m
+Updating a blog entry with id of  5c746e97271c198640bdbecd
+{ _id: '5c746e97271c198640bdbecd',
+  blogTitle: 'Favorite Game',
+  blogText: 'Overwatch' }
+(node:3042) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+[0mPUT /api/blog/5c746e97271c198640bdbecd [32m201 [0m17.617 ms - 90[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [32m200 [0m1.751 ms - 274[0m
+Finding blog { blogid: '5c746e97271c198640bdbecd' }
+{ _id: 5c746e97271c198640bdbecd,
+  blogTitle: 'Favorite Game',
+  blogText: 'Overwatch' }
+[0mGET /api/blog/5c746e97271c198640bdbecd [32m200 [0m1.916 ms - 85[0m
+Finding blog { blogid: '5c746e97271c198640bdbecd' }
+{ _id: 5c746e97271c198640bdbecd,
+  blogTitle: 'Favorite Game',
+  blogText: 'Overwatch' }
+[0mGET /api/blog/5c746e97271c198640bdbecd [36m304 [0m1.502 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [36m304 [0m2.219 ms - -[0m
+{ blogTitle: 'New blog', blogText: 'See I just added this' }
+{ _id: 5cbfca503932e30be268608b,
+  blogTitle: 'New blog',
+  blogText: 'See I just added this',
+  __v: 0 }
+[0mPOST /api/blog [32m201 [0m12.725 ms - 100[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.311 ms - 367[0m
+{ blogTitle: 'Neat right', blogText: 'I know. Lol' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Neat right',
+  blogText: 'I know. Lol',
+  __v: 0 }
+[0mPOST /api/blog [32m201 [0m2.490 ms - 92[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.110 ms - 452[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m2.417 ms - -[0m
+[0mGET / [32m200 [0m0.582 ms - 3410[0m
+[0mGET /bloggerApp.js [32m200 [0m1.265 ms - 3274[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.325 ms - 1150[0m
+[0mGET /favicon.ico [33m404 [0m0.991 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.394 ms - 452[0m
+[0mGET / [36m304 [0m0.413 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.232 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.334 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.438 ms - 452[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m2.832 ms - -[0m
+[0mGET / [32m200 [0m0.704 ms - 3410[0m
+[0mGET / [32m200 [0m0.510 ms - 3410[0m
+[0mGET /favicon.ico [33m404 [0m0.811 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+Finding blog { blogid: '5cbfca503932e30be268608b' }
+{ _id: 5cbfca503932e30be268608b,
+  blogTitle: 'New blog',
+  blogText: 'See I just added this',
+  __v: 0 }
+[0mGET /api/blog/5cbfca503932e30be268608b [32m200 [0m2.018 ms - 100[0m
+[0mGET / [36m304 [0m0.461 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.292 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.843 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog',
+    blogText: 'See I just added this',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m2.757 ms - -[0m
+Updating a blog entry with id of  5cbfca503932e30be268608b
+{ _id: '5cbfca503932e30be268608b',
+  blogTitle: 'New blog - Rachel was here',
+  blogText: 'See I just added this\n',
+  __v: 0 }
+[0mPUT /api/blog/5cbfca503932e30be268608b [32m201 [0m2.183 ms - 100[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.137 ms - 472[0m
+[0mGET / [36m304 [0m0.402 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.440 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.532 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Neat right',
+    blogText: 'I know. Lol',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.312 ms - 472[0m
+Finding blog { blogid: '5cbfca5e3932e30be268608c' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Neat right',
+  blogText: 'I know. Lol',
+  __v: 0 }
+[0mGET /api/blog/5cbfca5e3932e30be268608c [32m200 [0m2.013 ms - 92[0m
+Finding blog { blogid: '5cbfca5e3932e30be268608c' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Neat right',
+  blogText: 'I know. Lol',
+  __v: 0 }
+[0mGET /api/blog/5cbfca5e3932e30be268608c [36m304 [0m1.430 ms - -[0m
+Updating a blog entry with id of  5cbfca5e3932e30be268608c
+{ _id: '5cbfca5e3932e30be268608c',
+  blogTitle: 'Hey Rachel ',
+  blogText: 'You\'re a dork',
+  __v: 0 }
+[0mPUT /api/blog/5cbfca5e3932e30be268608c [32m201 [0m1.810 ms - 92[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'You\'re a dork',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.064 ms - 475[0m
+[0mGET / [32m200 [0m0.512 ms - 3410[0m
+[0mGET /bloggerApp.js [36m304 [0m0.325 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.241 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'You\'re a dork',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.357 ms - 475[0m
+Finding blog { blogid: '5cbfca5e3932e30be268608c' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Hey Rachel ',
+  blogText: 'You\'re a dork',
+  __v: 0 }
+[0mGET /api/blog/5cbfca5e3932e30be268608c [32m200 [0m1.989 ms - 95[0m
+[0mGET / [36m304 [0m0.402 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.327 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.217 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'You\'re a dork',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m2.436 ms - -[0m
+[0mGET / [36m304 [0m0.382 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.291 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.225 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'You\'re a dork',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m2.325 ms - -[0m
+Updating a blog entry with id of  5cbfca5e3932e30be268608c
+{ _id: '5cbfca5e3932e30be268608c',
+  blogTitle: 'Hey Rachel ',
+  blogText: 'I’m a dork - Josh',
+  __v: 0 }
+[0mPUT /api/blog/5cbfca5e3932e30be268608c [32m201 [0m2.112 ms - 95[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'I’m a dork - Josh',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.122 ms - 481[0m
+[0mGET / [36m304 [0m0.443 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.305 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.247 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'I’m a dork - Josh',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.343 ms - 481[0m
+[0mGET / [32m200 [0m0.541 ms - 3410[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.233 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.744 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 },
+  { _id: 5cbfca5e3932e30be268608c,
+    blogTitle: 'Hey Rachel ',
+    blogText: 'I’m a dork - Josh',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.431 ms - 481[0m
+[0mGET / [32m200 [0m0.676 ms - 3410[0m
+[0mGET /TP/public/index.php [33m404 [0m1.003 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /TP/index.php [33m404 [0m0.832 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /thinkphp/html/public/index.php [33m404 [0m0.782 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /html/public/index.php [33m404 [0m0.825 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET / [32m200 [0m0.605 ms - 3410[0m
+[0mGET / [32m200 [0m9.272 ms - 3410[0m
+[0mGET / [32m200 [0m1.056 ms - 3410[0m
+[0mGET / [32m200 [0m0.488 ms - 3410[0m
+[0mGET /TP/public/index.php [33m404 [0m5.097 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /TP/index.php [33m404 [0m0.815 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /thinkphp/html/public/index.php [33m404 [0m0.729 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /html/public/index.php [33m404 [0m0.929 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /public/index.php [33m404 [0m0.703 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /TP/html/public/index.php [33m404 [0m0.727 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET /elrekt.php [33m404 [0m0.729 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET / [32m200 [0m0.512 ms - 3410[0m
+[0mGET / [32m200 [0m0.547 ms - 3410[0m
+[0mGET / [32m200 [0m0.650 ms - 3410[0m
+[0mGET / [32m200 [0m2.557 ms - 3410[0m
+[0mGET / [32m200 [0m1.319 ms - 3410[0m
+[0mGET / [32m200 [0m0.675 ms - 3410[0m
+[0mGET / [32m200 [0m0.480 ms - 3410[0m
+[0mGET /favicon.ico [33m404 [0m11.904 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+Finding blog { blogid: '5cbfca5e3932e30be268608c' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Hey Rachel ',
+  blogText: 'I’m a dork - Josh',
+  __v: 0 }
+[0mGET /api/blog/5cbfca5e3932e30be268608c [32m200 [0m46.410 ms - 101[0m
+Finding blog { blogid: '5cbfca5e3932e30be268608c' }
+{ _id: 5cbfca5e3932e30be268608c,
+  blogTitle: 'Hey Rachel ',
+  blogText: 'I’m a dork - Josh',
+  __v: 0 }
+[0mGET /api/blog/5cbfca5e3932e30be268608c [36m304 [0m1.322 ms - -[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5cbfca5e3932e30be268608c [32m204 [0m16.368 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cbfca503932e30be268608b,
+    blogTitle: 'New blog - Rachel was here',
+    blogText: 'See I just added this\n',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m9.572 ms - 387[0m
+Finding blog { blogid: '5cbfca503932e30be268608b' }
+{ _id: 5cbfca503932e30be268608b,
+  blogTitle: 'New blog - Rachel was here',
+  blogText: 'See I just added this\n',
+  __v: 0 }
+[0mGET /api/blog/5cbfca503932e30be268608b [32m200 [0m1.839 ms - 120[0m
+Finding blog { blogid: '5cbfca503932e30be268608b' }
+{ _id: 5cbfca503932e30be268608b,
+  blogTitle: 'New blog - Rachel was here',
+  blogText: 'See I just added this\n',
+  __v: 0 }
+[0mGET /api/blog/5cbfca503932e30be268608b [36m304 [0m1.316 ms - -[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5cbfca503932e30be268608b [32m204 [0m1.395 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [32m200 [0m1.550 ms - 274[0m
+[0mGET /w00tw00t.at.ISC.SANS.DFind:) [33m404 [0m0.762 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET / [32m200 [0m1.399 ms - 3410[0m
+[0mGET /favicon.ico [33m404 [0m0.778 ms - 1707[0m
+Error: Failed to lookup view "error" in views directory "/home/bitnami/lab5/app_client"
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab5/app.js:40:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab5/app.js:29:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/home/bitnami/lab5/node_modules/serve-static/index.js:121:7)
+    at emitOne (events.js:116:13)
+[0mGET / [32m200 [0m0.537 ms - 3410[0m
+[0mGET /bloggerApp.js [32m200 [0m1.990 ms - 3274[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.650 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [36m304 [0m2.339 ms - -[0m
+Getting the list of blogs
+[0mGET / [36m304 [0m1.407 ms - -[0m
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [36m304 [0m3.007 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [36m304 [0m1.812 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.435 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.227 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c746e97271c198640bdbecd,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch' },
+  { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' } ]
+[0mGET /api/blog [32m200 [0m1.898 ms - 274[0m
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/home/bitnami/lab6/.bin/www'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+(node:10459) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+[0mGET / [36m304 [0m4.787 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.697 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.365 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.229 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.355 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m23.420 ms - -[0m
+[0mPOST /api/login [32m200 [0m30.210 ms - 267[0m
+Getting the list of blogs
+[ { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m4.766 ms - -[0m
+Finding blog { blogid: '5cc13251fb7bac0777357cda' }
+Finding blog { blogid: '5cc13251fb7bac0777357cda' }
+{ _id: 5cc13251fb7bac0777357cda,
+  blogTitle: 'First Favorite Game',
+  blogText: 'Overwatch',
+  __v: 0 }
+[0mGET /api/blog/5cc13251fb7bac0777357cda [32m200 [0m5.174 ms - 99[0m
+{ _id: 5cc13251fb7bac0777357cda,
+  blogTitle: 'First Favorite Game',
+  blogText: 'Overwatch',
+  __v: 0 }
+[0mGET /api/blog/5cc13251fb7bac0777357cda [32m200 [0m9.291 ms - 99[0m
+Updating a blog entry with id of  5cc13251fb7bac0777357cda
+{ _id: '5cc13251fb7bac0777357cda',
+  blogTitle: 'First Favorite Game',
+  blogText: 'Overwatch',
+  __v: 0 }
+[0mPUT /api/blog/5cc13251fb7bac0777357cda [32m201 [0m16.729 ms - 99[0m
+Getting the list of blogs
+[ { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5c7474b6a5fc339d895e5773,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem' },
+  { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m3.618 ms - -[0m
+Finding blog { blogid: '5c7474b6a5fc339d895e5773' }
+{ _id: 5c7474b6a5fc339d895e5773,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem' }
+[0mGET /api/blog/5c7474b6a5fc339d895e5773 [32m200 [0m2.117 ms - 88[0m
+Finding blog { blogid: '5c7474b6a5fc339d895e5773' }
+{ _id: 5c7474b6a5fc339d895e5773,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem' }
+[0mGET /api/blog/5c7474b6a5fc339d895e5773 [32m200 [0m1.548 ms - 88[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5c7474b6a5fc339d895e5773 [32m204 [0m4.284 ms - -[0m
+Getting the list of blogs
+[ { _id: 5c747423a5fc339d895e5771,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea Of Thieves' },
+  { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m1.837 ms - 267[0m
+Finding blog { blogid: '5c747423a5fc339d895e5771' }
+Finding blog { blogid: '5c747423a5fc339d895e5771' }
+{ _id: 5c747423a5fc339d895e5771,
+  blogTitle: 'Second Favorite Game',
+  blogText: 'Sea Of Thieves' }
+[0mGET /api/blog/5c747423a5fc339d895e5771 [32m200 [0m2.978 ms - 97[0m
+{ _id: 5c747423a5fc339d895e5771,
+  blogTitle: 'Second Favorite Game',
+  blogText: 'Sea Of Thieves' }
+[0mGET /api/blog/5c747423a5fc339d895e5771 [32m200 [0m3.444 ms - 97[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5c747423a5fc339d895e5771 [32m204 [0m1.815 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.703 ms - 169[0m
+{ blogTitle: 'Second Favorite Game',
+  blogText: 'Sea of Thieves' }
+{ _id: 5cc1e700c1aaeb28db1fea70,
+  blogTitle: 'Second Favorite Game',
+  blogText: 'Sea of Thieves',
+  __v: 0 }
+[0mPOST /api/blog [32m201 [0m11.618 ms - 105[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.094 ms - 267[0m
+{ blogTitle: 'Third Favorite Game', blogText: 'Anthem' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mPOST /api/blog [32m201 [0m3.923 ms - 96[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e61d7eb86327d3562740,
+    blogTitle: 'hello',
+    blogText: 'goodbye',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.187 ms - 356[0m
+Finding blog { blogid: '5cc1e61d7eb86327d3562740' }
+{ _id: 5cc1e61d7eb86327d3562740,
+  blogTitle: 'hello',
+  blogText: 'goodbye',
+  __v: 0 }
+[0mGET /api/blog/5cc1e61d7eb86327d3562740 [32m200 [0m2.093 ms - 83[0m
+Finding blog { blogid: '5cc1e61d7eb86327d3562740' }
+{ _id: 5cc1e61d7eb86327d3562740,
+  blogTitle: 'hello',
+  blogText: 'goodbye',
+  __v: 0 }
+[0mGET /api/blog/5cc1e61d7eb86327d3562740 [32m200 [0m2.164 ms - 83[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5cc1e61d7eb86327d3562740 [32m204 [0m1.796 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m1.707 ms - 280[0m
+{ blogTitle: 'this here', blogText: 'that here' }
+{ _id: 5cc1e72fc1aaeb28db1fea72,
+  blogTitle: 'this here',
+  blogText: 'that here',
+  __v: 0 }
+[0mPOST /api/blog [32m201 [0m2.806 ms - 89[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 },
+  { _id: 5cc1e72fc1aaeb28db1fea72,
+    blogTitle: 'this here',
+    blogText: 'that here',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.425 ms - 362[0m
+Finding blog { blogid: '5cc1e72fc1aaeb28db1fea72' }
+{ _id: 5cc1e72fc1aaeb28db1fea72,
+  blogTitle: 'this here',
+  blogText: 'that here',
+  __v: 0 }
+[0mGET /api/blog/5cc1e72fc1aaeb28db1fea72 [32m200 [0m2.422 ms - 89[0m
+Finding blog { blogid: '5cc1e72fc1aaeb28db1fea72' }
+{ _id: 5cc1e72fc1aaeb28db1fea72,
+  blogTitle: 'this here',
+  blogText: 'that here',
+  __v: 0 }
+[0mGET /api/blog/5cc1e72fc1aaeb28db1fea72 [32m200 [0m1.725 ms - 89[0m
+Deleting blog entry with id of  undefined
+{}
+[0mDELETE /api/blog/5cc1e72fc1aaeb28db1fea72 [32m204 [0m3.067 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m2.455 ms - 280[0m
+(node:10777) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m25.407 ms - -[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [32m200 [0m8.205 ms - 96[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [32m200 [0m6.041 ms - 96[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m4.192 ms - -[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [36m304 [0m3.178 ms - -[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [36m304 [0m2.076 ms - -[0m
+(node:10943) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+[0mGET / [36m304 [0m6.082 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.794 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.482 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.354 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.289 ms - -[0m
+[0mGET / [36m304 [0m0.794 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.568 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.343 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.369 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.348 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m22.701 ms - -[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [36m304 [0m7.163 ms - -[0m
+Finding blog { blogid: '5cc1e713c1aaeb28db1fea71' }
+{ _id: 5cc1e713c1aaeb28db1fea71,
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mGET /api/blog/5cc1e713c1aaeb28db1fea71 [36m304 [0m2.243 ms - -[0m
+Updating a blog entry with id of  5cc1e713c1aaeb28db1fea71
+{ _id: '5cc1e713c1aaeb28db1fea71',
+  blogTitle: 'Third Favorite Game',
+  blogText: 'Anthem',
+  __v: 0 }
+[0mPUT /api/blog/5cc1e713c1aaeb28db1fea71 [32m201 [0m19.241 ms - 96[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m1.894 ms - -[0m
+[0mGET /manager/html [33m404 [0m17.240 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab6/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab6/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab6/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET /favicon.ico [33m404 [0m1.001 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab6/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab6/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab6/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m2.812 ms - 5601[0m
+[0mGET /nav/navigation.js [32m200 [0m1.982 ms - 728[0m
+[0mGET /bloggerApp.js [32m200 [0m0.869 ms - 7959[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.764 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m0.841 ms - 694[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m23.153 ms - 280[0m
+[0mGET /favicon.ico [33m404 [0m0.812 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab6/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab6/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab6/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.689 ms - 5601[0m
+[0mGET / [32m200 [0m0.885 ms - 5601[0m
+[0mGET / [32m200 [0m0.657 ms - 5601[0m
+[0mGET / [32m200 [0m0.771 ms - 5601[0m
+[0mGET /favicon.ico [33m404 [0m0.605 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab6/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab6/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab6/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.670 ms - 5601[0m
+[0mGET / [32m200 [0m0.617 ms - 5601[0m
+[0mGET / [32m200 [0m1.067 ms - 5601[0m
+[0mGET / [32m200 [0m0.667 ms - 5601[0m
+[0mGET / [32m200 [0m0.487 ms - 5601[0m
+[0mGET /bloggerApp.js [32m200 [0m0.840 ms - 7959[0m
+[0mGET /nav/navigation.js [32m200 [0m0.846 ms - 728[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.272 ms - 1150[0m
+[0mGET /nav/navigation.html [32m200 [0m0.854 ms - 694[0m
+Getting the list of blogs
+[ { _id: 5cc13251fb7bac0777357cda,
+    blogTitle: 'First Favorite Game',
+    blogText: 'Overwatch',
+    __v: 0 },
+  { _id: 5cc1e700c1aaeb28db1fea70,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    __v: 0 },
+  { _id: 5cc1e713c1aaeb28db1fea71,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.102 ms - 280[0m
+(node:16160) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+[0mGET / [32m200 [0m8.612 ms - 5734[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.540 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.860 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.371 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.388 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc2677abcb11a3e942e856a,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc2678fbcb11a3e942e856b,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc26798bcb11a3e942e856c,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc267c8bcb11a3e942e856e,
+    blogTitle: 'Fourth Favorite Game',
+    blogText: 'Apex Legends',
+    userName: 'KILLER73FLASH',
+    userEmail: 'joshuakilhefner@live.com',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m22.337 ms - -[0m
+Getting the list of blogs
+[ { _id: 5cc2677abcb11a3e942e856a,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc2678fbcb11a3e942e856b,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc26798bcb11a3e942e856c,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc267c8bcb11a3e942e856e,
+    blogTitle: 'Fourth Favorite Game',
+    blogText: 'Apex Legends',
+    userName: 'KILLER73FLASH',
+    userEmail: 'joshuakilhefner@live.com',
+    __v: 0 } ]
+[0mGET /api/blog [36m304 [0m5.286 ms - -[0m
+[0mGET / [32m200 [0m0.940 ms - 5734[0m
+[0mGET / [32m200 [0m0.554 ms - 5734[0m
+[0mGET / [32m200 [0m0.397 ms - 5734[0m
+[0mGET / [32m200 [0m0.721 ms - 5734[0m
+[0mGET /nav/navigation.js [32m200 [0m1.296 ms - 728[0m
+[0mGET /bloggerApp.js [32m200 [0m1.018 ms - 8190[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.581 ms - 1150[0m
+[0mGET /nav/navigation.html [32m200 [0m1.132 ms - 694[0m
+[0mGET /favicon.ico [33m404 [0m3.183 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab7/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab7/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab7/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab7/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab7/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab7/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.530 ms - 5734[0m
+[0mGET /nav/navigation.js [32m200 [0m0.534 ms - 728[0m
+[0mGET /bloggerApp.js [32m200 [0m0.405 ms - 8190[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.311 ms - 1150[0m
+[0mGET /nav/navigation.html [32m200 [0m0.537 ms - 694[0m
+[0mGET /favicon.ico [33m404 [0m0.879 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab7/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab7/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab7/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab7/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab7/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab7/node_modules/passport/lib/middleware/initialize.js:53:5)
+Getting the list of blogs
+[ { _id: 5cc2677abcb11a3e942e856a,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc2678fbcb11a3e942e856b,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc26798bcb11a3e942e856c,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc267c8bcb11a3e942e856e,
+    blogTitle: 'Fourth Favorite Game',
+    blogText: 'Apex Legends',
+    userName: 'KILLER73FLASH',
+    userEmail: 'joshuakilhefner@live.com',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.348 ms - 646[0m
+[0mGET / [32m200 [0m1.384 ms - 5734[0m
+[0mGET /.env [33m404 [0m0.793 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab7/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab7/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab7/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab7/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab7/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab7/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.630 ms - 5734[0m
+[0mGET / [32m200 [0m0.550 ms - 5734[0m
+[0mGET / [32m200 [0m0.715 ms - 5734[0m
+[0mGET / [32m200 [0m0.488 ms - 5734[0m
+[0mGET / [32m200 [0m19.298 ms - 5734[0m
+[0mGET / [32m200 [0m0.663 ms - 5734[0m
+[0mGET / [32m200 [0m0.694 ms - 5734[0m
+[0mGET / [32m200 [0m0.492 ms - 5734[0m
+[0mGET / [32m200 [0m0.497 ms - 5734[0m
+[0mGET / [32m200 [0m0.617 ms - 5734[0m
+[0mGET / [32m200 [0m0.693 ms - 5734[0m
+[0mGET / [32m200 [0m0.525 ms - 5734[0m
+[0mGET /favicon.ico [33m404 [0m1.965 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab7/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab7/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab7/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab7/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab7/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab7/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.551 ms - 5734[0m
+[0mGET / [32m200 [0m0.535 ms - 5734[0m
+[0mGET /favicon.ico [33m404 [0m0.830 ms - 1720[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab7/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab7/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/lab7/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/lab7/app.js:43:7
+    at Layer.handle_error (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at /home/bitnami/lab7/app.js:32:3
+    at Layer.handle [as handle_request] (/home/bitnami/lab7/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bitnami/lab7/node_modules/express/lib/router/index.js:317:13)
+    at /home/bitnami/lab7/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/lab7/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab7/node_modules/express/lib/router/index.js:275:10)
+    at initialize (/home/bitnami/lab7/node_modules/passport/lib/middleware/initialize.js:53:5)
+[0mGET / [32m200 [0m0.633 ms - 5734[0m
+[0mGET /bloggerApp.js [32m200 [0m1.635 ms - 8190[0m
+[0mGET /nav/navigation.js [32m200 [0m2.131 ms - 728[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.530 ms - 1150[0m
+[0mGET /nav/navigation.html [32m200 [0m1.093 ms - 694[0m
+Getting the list of blogs
+[ { _id: 5cc2677abcb11a3e942e856a,
+    blogTitle: 'Favorite Game',
+    blogText: 'Overwatch',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc2678fbcb11a3e942e856b,
+    blogTitle: 'Second Favorite Game',
+    blogText: 'Sea of Thieves',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc26798bcb11a3e942e856c,
+    blogTitle: 'Third Favorite Game',
+    blogText: 'Anthem',
+    userName: 'Joshua Kilhefner',
+    userEmail: 'jtkilhef@millersville.edu',
+    __v: 0 },
+  { _id: 5cc267c8bcb11a3e942e856e,
+    blogTitle: 'Fourth Favorite Game',
+    blogText: 'Apex Legends',
+    userName: 'KILLER73FLASH',
+    userEmail: 'joshuakilhefner@live.com',
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m47.496 ms - 646[0m
