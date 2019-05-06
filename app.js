@@ -1,17 +1,20 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var dotenv = require('dotenv').config({path: path.join(__dirname, '.env')});
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var passport = require('passport');
 require('./app_api/models/db');
- 
-var routes = require('./app_server/routes/index');
+require('./app_api/config/passport');
+//var routes = require('./app_server/routes/index');
 var routesApi = require('./app_api/routes/index');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'app_server',  'views'));
+app.set('views', path.join(__dirname, 'app_client'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -19,8 +22,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', routes);
+app.use(express.static(path.join(__dirname, 'app_client')));
+app.use(passport.initialize());
+//app.use('/', routes);
 app.use('/api', routesApi);
 
 // catch 404 and forward to error handler
